@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SantiagoMartinezLopez</title>
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+	<script src="myscript.js">
+
+	</script>
+</head>
+<body>
+	<section id="page">
+		<cabecera>
+			<a href="https://www.unileon.es/" target="_blank">
+				<img src="captura.png" width="250" height="150" id="imagen">
+				</img>
+			</a>
+			<h2>
+				Ejercicio de <nombre id="nameHeader">"Santiago Martinez Lopez"</nombre>
+			</h2>
+		</cabecera>
+		<instrucciones id="loDeCambiarElColor">
+			<h3>
+                Instrucciones Ejercicio 1:
+			</h3>
+			<p>
+				Debes replicar este ejercicio en dos ficheros:
+			</p>
+			<ul>
+				<li>
+					Fichero index.html con el código HTML, necesario para replicar este mismo contenido
+				</li>
+				<li>
+					Fichero style.css con el código CSS necesario para dar estilo al ejercicio
+				</li>
+			</ul>
+			<p>
+				Además, debe cumplir los siguientes puntos:
+			</p>
+			<ul id="lista-cohete">
+				<li  id="miLista">
+					Github Classroom para depositar el código fuente
+				</li>
+				<li onclick="countClics()" id="contadorDeClics">
+					Modificar el encabezado del ejercicio con tu nombre
+				</li>
+				<li>
+					La única modificación entre tu ejercicio y este es tu nombre(debes mantener colores y tamaños de letra)
+				</li>
+				<li>
+					La imagen de la cabecera está en la siguiente URL y es un enlace a la página web de la universidad https://www.unileon.es/ficheros/informacion_general/id_visual_corporativa/
+					escudo_oficial/escudo-txtderecha.jpg
+				</li>
+				<li>
+					Debes realizar una captura de pantalla con el resultado de tu ejercicio y subirla a
+					<a href="https://www.agora.unileon.es" target="_blank">
+						ágora
+					</a>
+					(este es un enlace a https://www.agora.unileon.es)
+				</li>
+			</ul>
+		</instrucciones>
+		<formulario id="aplicarElColor">
+			<h3>
+				Formulario
+			</h3>
+			<form action="/my-handling-form-page" method="post" id="elFormulario" id="username">
+					<div>
+						Nombre
+						<label id="asterisco">
+							*
+						</label>
+					</div>
+					<div>
+						Fecha de nacimiento
+					</div>
+					<div>
+						Edad
+					</div>
+					<div>
+						Género
+					</div>
+					<fieldset class="laCeldilla">
+					</fieldset>
+					<div id="con">
+						Conoce HTML5
+					</div>
+					<div id="fav">
+						Color Favorito
+					</div>
+					<div id="fot">
+						Foto
+					</div>
+					<div>
+						<button class="envio" onclick="submitForm()">Enviar</button>
+					</div>
+			</form>
+		</formulario>
+		<formulario2 id="aplicarElColor2">
+			<form action="/my-handling-form-page" method="post" id="elFormulario"></form>
+			<div>
+				<input type="text" oninput="changeName()" id="recogerNombre"/>
+			</div>
+			<div>
+				<input type="date" class="laFecha" id="bday" oninput="getTheYears()"/>
+			</div>
+			<div>
+				<input type="number" id="laEdad" disabled/>
+			</div>
+			<fieldset class="laLinea"  onclick="chooseGenre()">
+				<legend>
+					Elige tu género
+				</legend>
+				<input type="radio" name="genero" id="etiquetaGeneroMasculino" value="Masculino"/>
+				<label for="genero">
+					Masculino
+				</label>
+				<div>
+					<input type="radio" name="genero" id="etiquetaGeneroFemenino" value="Femenino"/>
+					<label for="genero">
+						Femenino
+					</label>
+				</div>
+				<div>
+					<input type="radio" name="genero" id="etiquetaGeneroOtro" value="Otro"/>
+					<label for="genero">
+						Otro
+					</label>
+				</div>
+			</fieldset>
+			<label>
+				<fieldset class="mod">
+					<input type="checkbox" class="elChek" id="laCasilla" onclick="showPicture()"/>
+				</fieldset>
+			</label>
+			<input type="color" id="elColor" oninput="changeColor()"/>
+			<div>
+				<input type="file"/>
+			</div>
+			</form>
+		</formulario2>
+	</section>	  
+</body>
+</html>

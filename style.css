@@ -1,0 +1,86 @@
+#page {
+    display: grid;
+    height: auto;
+    grid-template-areas: "a a a"
+                         "b c d";
+}
+
+#page > cabecera {
+    grid-area: a;
+    text-align: center;
+    border-bottom: 5px dotted blue;
+}
+
+#page > instrucciones {
+    grid-area: b;
+    background-color: rgba(0, 0, 255, 0.626);
+    color: white;
+}
+
+#page > formulario {
+    grid-area: c;
+    line-height: 15px;
+    background-color: lightgray;
+}
+
+#page > formulario2 {
+    grid-area: d;
+    padding-top: 60px;
+    padding-right: 100px;
+    background-color: lightgray;
+}
+
+#lista-cohete{
+    list-style-type: '🚀';
+}
+
+#asterisco {
+    color: red;
+}
+
+#elBoton {
+    width: 150px;
+}
+
+#elFormulario {
+    line-height: 150%;
+}
+
+.laFecha {
+    width: 140px;
+}
+
+.laCeldilla {
+    height: 78px;
+    border: none;
+}
+
+.laLinea {
+    border-color: black;
+}
+
+.mod {
+    height: 15px;
+    text-align: center;
+    border: none;
+}
+
+#con {
+    line-height: 30px;
+}
+
+#fav {
+    line-height: 20px;
+}
+
+#fot {
+    line-height: 33px;
+}
+
+.envio {
+    width: 160px;
+}
+
+.laFecha {
+    width: 165px;
+}
